@@ -2,17 +2,15 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:who_is_available/widgets/background_main.dart';
 import 'package:who_is_available/widgets/custom_dividers.dart';
-import 'package:who_is_available/widgets/divider_custom.dart';
-import 'package:who_is_available/widgets/main_background.dart';
 
 class HomePage extends StatefulWidget {
   final String name;
   final String lastName;
-  final String imgUrl;
-  final String numberCel;
+  final String? imgUrl;
+  final String? numberCel;
 
   const HomePage(
-      {Key key,
+      {Key? key,
       this.name = 'Omar',
       this.lastName = 'Paez',
       this.imgUrl,
@@ -25,9 +23,9 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-  AnimationController controller;
+  AnimationController? controller;
 
-  Animation<double> rotacion;
+  Animation<double>? rotacion;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -120,7 +118,7 @@ class _HomePageState extends State<HomePage> {
 
 class _Avatar extends StatelessWidget {
   const _Avatar({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
