@@ -1,5 +1,7 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
+import 'package:who_is_available/widgets/background_main.dart';
+import 'package:who_is_available/widgets/custom_dividers.dart';
 import 'package:who_is_available/widgets/divider_custom.dart';
 import 'package:who_is_available/widgets/main_background.dart';
 
